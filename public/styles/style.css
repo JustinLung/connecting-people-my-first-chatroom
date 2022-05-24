@@ -1,0 +1,88 @@
+:root {
+  --dark-grey: #1a1a1a;
+  --white: #fff;
+  --transparent: transparent;
+  --transparent-white: rgba(255, 255, 255, 0.7);
+}
+
+@font-face {
+  font-family: 'Modern Era Medium';
+  src: url('../assets/Modern-Era-Medium.ttf');
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Modern Era Medium', Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  padding: 2em 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  height: fit-content;
+  width: 30em;
+  background-color: #f5f7fb;
+  border-radius: 0.5em;
+  margin-bottom: 2em;
+}
+
+section ul {
+  margin: 0 auto;
+  list-style-type: none;
+  flex-grow: 2;
+
+  width: 18em;
+  overflow-y: scroll;
+
+  line-height: 1.6em;
+  margin-top: 0.5em;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1.5em 0;
+  gap: 0.5em;
+}
+
+input {
+  all: unset;
+  background-color: #fff;
+  padding: 0 2em;
+  border-radius: 1em;
+  height: 2.5em;
+}
+
+button {
+  all: unset;
+  background-color: #d81a22;
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 50%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+button > img {
+  width: 1.5em;
+  margin: 0 auto;
+}
