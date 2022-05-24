@@ -1,8 +1,9 @@
 :root {
   --dark-grey: #1a1a1a;
+  --black: #171919;
   --white: #fff;
-  --transparent: transparent;
-  --transparent-white: rgba(255, 255, 255, 0.7);
+  --light-grey: #f5f6f9;
+  --blue: #888caf;
 }
 
 @font-face {
@@ -20,61 +21,99 @@
 body {
   font-family: 'Modern Era Medium', Arial, Helvetica, sans-serif;
   box-sizing: border-box;
-}
-
-header {
-  text-align: center;
-  padding: 2em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue);
 }
 
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-section {
-  height: fit-content;
+  height: 30em;
   width: 30em;
-  background-color: #f5f7fb;
-  border-radius: 0.5em;
-  margin-bottom: 2em;
 }
 
-section ul {
-  margin: 0 auto;
-  list-style-type: none;
-  flex-grow: 2;
+ul {
+  padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  height: 100%;
+  overflow-y: auto;
+  background-color: var(--white);
+}
 
-  width: 18em;
-  overflow-y: scroll;
+li:first-child {
+  margin-top: 1em;
+}
 
-  line-height: 1.6em;
-  margin-top: 0.5em;
+li:last-child {
+  margin-bottom: 1em;
+}
+
+li {
+  width: 10em;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+.received {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.sent {
+  align-self: flex-end;
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+header {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 1.5em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 7em;
+  align-items: center;
+
+  margin-top: 2em;
+}
+
+header .scrollbook-logo {
+  width: 4em;
+}
+
+header .leave-icon {
+  cursor: pointer;
+  width: 1.5em;
 }
 
 form {
   display: flex;
   justify-content: center;
-  width: 100%;
-  padding: 1.5em 0;
+  align-items: center;
   gap: 0.5em;
+  background-color: var(--black);
+  padding: 2em 0;
 }
 
 input {
   all: unset;
-  background-color: #fff;
+  background-color: var(--light-grey);
   padding: 0 2em;
-  border-radius: 1em;
+  border-radius: 0.5em;
   height: 2.5em;
+  width: 70%;
 }
 
 button {
   all: unset;
-  background-color: #d81a22;
+  background-color: var(--blue);
   height: 2.5em;
   width: 2.5em;
-  border-radius: 50%;
+  border-radius: 0.5em;
 
   display: flex;
   flex-direction: row;
@@ -82,7 +121,7 @@ button {
   align-items: center;
 }
 
-button > img {
-  width: 1.5em;
+button img {
+  width: 1em;
   margin: 0 auto;
 }

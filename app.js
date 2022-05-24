@@ -9,16 +9,24 @@ const PORT = process.env.PORT || 3000
 app.set('views', path.join(__dirname + '/views'))
 app.set('view engine', 'ejs')
 app.use(express.static(path.join(__dirname + '/public')))
+app.use(express.urlencoded({ extended: true }))
+
+const users = {}
 
 io.on('connection', (socket) => {
-  console.log('User has been connected.')
-
-  socket.on('message', (message) => {
-    io.emit('message', message)
+  socket.on('new-user', (name) => {
+    users[socket.id] = name
+    socket.broadcast.emit('user-connected', name)
   })
-
+  socket.on('send-chat-message', (message) => {
+    socket.broadcast.emit('chat-message', {
+      message: message,
+      name: users[socket.id],
+    })
+  })
   socket.on('disconnect', () => {
-    console.log('User ')
+    socket.broadcast.emit('user-disconnected', users[socket.id])
+    delete users[socket.id]
   })
 })
 

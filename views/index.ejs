@@ -1,12 +1,14 @@
 <%- include('partials/header.ejs') %>
 
-  <section>
-
-    <ul></ul>
-    <form>
-      <input type="text" placeholder="Type your message">
-      <button><img src="/assets/send-icon.png" alt="Send Icon"></button>
-    </form>
-  </section>
+  <header class="section-header">
+    <img src="/assets/scrollbook-logo.svg" alt="Scrollbook Logo" class="scrollbook-logo">
+    <h2>Booktalk</h2>
+    <img src="/assets/leave-icon.svg" alt="Leave Icon" class="leave-icon">
+  </header>
+  <ul></ul>
+  <form>
+    <input type="text" placeholder="Send Message...">
+    <button type="submit"><img src="/assets/send-icon.png" alt="Send Icon"></button>
+  </form>
 
   <%- include('partials/footer.ejs') %>
