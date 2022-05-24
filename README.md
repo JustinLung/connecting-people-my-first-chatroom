@@ -10,19 +10,37 @@
   * [Licentie](#licentie)
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 Dit is mijn eerste chat applicatie gemaakt met behulp van Socket IO en Express.
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+![mockup image](https://github.com/JustinLung/connecting-people-my-first-chatroom/blob/main/docs/mockup.png?raw=true)
+[🌐 Live](https://my-first-chatroom-justin.herokuapp.com/)
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+- 🍔 HTML
+- 👋 CSS
+- 📚 Javascript
+- ☀️ NodeJS
+- 🚄 Express
+- 🧦 Socket.io
 
-## Installatie
+## Installatie & Gebruik
+```
+# Cloning the repository
+git clone https://github.com/JustinLung/connecting-people-my-first-chatroom.git
 
-## Gebruik
+# Moving to the folder
+cd connecting-people-my-first-chatroom
+
+# Install NPM packages
+npm install
+
+# Run local server
+npm run start
+```
 
 ## Bronnen
+- [📱 Barebonechat](https://github.com/ju5tu5/barebonechat)
+- [How to Deploy Node js Application on Heroku](https://www.youtube.com/watch?v=maNWl202vy4&t=211s)
 
 ## Licentie
 
