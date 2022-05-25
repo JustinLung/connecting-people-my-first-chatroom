@@ -2,6 +2,7 @@ const express = require('express')
 const path = require('path')
 const app = express()
 const http = require('http').createServer(app)
+const compression = require('compression')
 const io = require('socket.io')(http)
 const PORT = process.env.PORT || 3000
 
@@ -33,6 +34,15 @@ io.on('connection', (socket) => {
 // Routes
 app.get('/', (req, res) => {
   res.render('index')
+})
+
+// Compress all response
+app.use(compression())
+
+// Cache Headers
+app.use((req, res, next) => {
+  res.set('Cache-control', 'public, max-age=300')
+  next()
 })
 
 // Port Listener
