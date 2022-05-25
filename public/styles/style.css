@@ -79,6 +79,9 @@ header {
   align-items: center;
 
   margin-top: 2em;
+
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
 }
 
 header .scrollbook-logo {
@@ -97,6 +100,8 @@ form {
   gap: 0.5em;
   background-color: var(--black);
   padding: 2em 0;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
 }
 
 input {
