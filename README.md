@@ -1,6 +1,6 @@
 # 🚀 My First Chat App
-
-![mockup image](https://github.com/JustinLung/connecting-people-my-first-chatroom/blob/main/docs/mockup.png?raw=true)
+Dit is mijn eerste chat applicatie gemaakt met behulp van Socket IO, NodeJS & Express.
+![mockup image](https://github.com/JustinLung/connecting-people-my-first-chatroom/blob/main/docs/mockup-image-new.png?raw=true)
 
 ## 😄 Inhoudsopgave
 
@@ -10,10 +10,6 @@
 - [Gebruik](#gebruik)
 - [Bronnen](#bronnen)
 - [Licentie](#licentie)
-
-## 🤪 Beschrijving
-
-Dit is mijn eerste chat applicatie gemaakt met behulp van Socket IO, NodeJS & Express.
 
 ## 🥺 Beschrijving
 Dit is mijn eerste chat applicatie gemaakt met behulp van Socket IO en Express.
